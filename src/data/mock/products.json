@@ -1,0 +1,110 @@
+[
+  {
+    "id": "prod-001",
+    "slug": "sheer-soft",
+    "name": "Mediven sheer & soft",
+    "description": "Media de compresión elegante y transparente",
+    "brand": "mediven",
+    "image": "/images/product-1.jpg",
+    "availableTypes": ["AD", "AG", "AT"],
+    "hasBandSelection": false,
+    "isActive": true,
+    "displayOrder": 1
+  },
+  {
+    "id": "prod-002",
+    "slug": "elegance",
+    "name": "Mediven elegance",
+    "description": "Media de compresión con acabado elegante",
+    "brand": "mediven",
+    "image": "/images/product-2.jpg",
+    "availableTypes": ["AD", "AG", "AT"],
+    "hasBandSelection": true,
+    "isActive": true,
+    "displayOrder": 2
+  },
+  {
+    "id": "prod-003",
+    "slug": "comfort",
+    "name": "Mediven comfort",
+    "description": "Media de compresión cómoda para uso diario",
+    "brand": "mediven",
+    "image": "/images/product-1.jpg",
+    "availableTypes": ["AD", "AG", "AT"],
+    "hasBandSelection": true,
+    "isActive": true,
+    "displayOrder": 3
+  },
+  {
+    "id": "prod-004",
+    "slug": "cotton",
+    "name": "Mediven cotton",
+    "description": "Media de compresión con algodón natural",
+    "brand": "mediven",
+    "image": "/images/product-2.jpg",
+    "availableTypes": ["AD", "AG", "AT"],
+    "hasBandSelection": true,
+    "isActive": true,
+    "displayOrder": 4
+  },
+  {
+    "id": "prod-005",
+    "slug": "plus",
+    "name": "Mediven plus",
+    "description": "Media de compresión reforzada",
+    "brand": "mediven",
+    "image": "/images/product-1.jpg",
+    "availableTypes": ["AD", "AG", "AT"],
+    "hasBandSelection": true,
+    "isActive": true,
+    "displayOrder": 5
+  },
+  {
+    "id": "prod-006",
+    "slug": "forte",
+    "name": "Mediven forte",
+    "description": "Media de compresión de alta resistencia",
+    "brand": "mediven",
+    "image": "/images/product-2.jpg",
+    "availableTypes": ["AD", "AG", "AT"],
+    "hasBandSelection": true,
+    "isActive": true,
+    "displayOrder": 6
+  },
+  {
+    "id": "prod-007",
+    "slug": "active",
+    "name": "Mediven active",
+    "description": "Media de compresión para vida activa",
+    "brand": "mediven",
+    "image": "/images/product-1.jpg",
+    "availableTypes": ["AD"],
+    "hasBandSelection": false,
+    "isActive": true,
+    "displayOrder": 7
+  },
+  {
+    "id": "prod-008",
+    "slug": "mondi",
+    "name": "Mediven mondi",
+    "description": "Media de compresión versátil",
+    "brand": "mediven",
+    "image": "/images/product-2.jpg",
+    "availableTypes": ["AD", "AG"],
+    "hasBandSelection": false,
+    "isActive": true,
+    "displayOrder": 8
+  },
+  {
+    "id": "prod-009",
+    "slug": "550",
+    "name": "Mediven 550",
+    "description": "Media de compresión para tallas especiales",
+    "brand": "mediven",
+    "image": "/images/product-1.jpg",
+    "availableTypes": ["AD"],
+    "hasBandSelection": false,
+    "isActive": true,
+    "displayOrder": 9
+  }
+]
