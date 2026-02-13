@@ -137,10 +137,12 @@ export function useSizeCalculator(
     const lengthNames = Object.keys(lengths[type])
     const ranges = Object.values(lengths[type])
 
+    if (ranges.length === 0 || !ranges[0]) return null
+
     if (lengthValue < ranges[0][0]) {
-      return lengthNames[0] // Corta
+      return lengthNames[0] || null // Corta
     }
-    return lengthNames[lengthNames.length - 1] // Regular/Normal
+    return lengthNames[lengthNames.length - 1] || null // Regular/Normal
   })
 
   /**

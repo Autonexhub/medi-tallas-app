@@ -147,6 +147,7 @@ class SupabaseDataProvider implements DataProvider {
       slug: p.slug,
       name: p.name,
       description: p.description,
+      brand: p.brand || 'medi',
       availableTypes: p.available_types,
       hasBandSelection: p.has_band_selection,
       isActive: p.is_active,
@@ -170,6 +171,7 @@ class SupabaseDataProvider implements DataProvider {
       slug: data.slug,
       name: data.name,
       description: data.description,
+      brand: data.brand || 'medi',
       availableTypes: data.available_types,
       hasBandSelection: data.has_band_selection,
       isActive: data.is_active,
@@ -222,11 +224,16 @@ class SupabaseDataProvider implements DataProvider {
     if (error) throw error
 
     const lengths: Record<string, Record<string, number[]>> = {}
-    for (const l of data) {
-      if (!lengths[l.media_type]) {
-        lengths[l.media_type] = {}
+    if (data) {
+      for (const l of data) {
+        if (!lengths[l.media_type]) {
+          lengths[l.media_type] = {}
+        }
+        const mediaTypeData = lengths[l.media_type]
+        if (mediaTypeData) {
+          mediaTypeData[l.length_name] = [l.min_value, l.max_value]
+        }
       }
-      lengths[l.media_type][l.length_name] = [l.min_value, l.max_value]
     }
 
     return lengths

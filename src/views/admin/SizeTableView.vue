@@ -23,7 +23,9 @@ const sizeNames = computed(() => {
 })
 
 const measurementCodes = computed(() => {
-  const firstSize = currentSizeTable.value?.[sizeNames.value[0]]
+  const firstSizeName = sizeNames.value[0]
+  if (!firstSizeName) return []
+  const firstSize = currentSizeTable.value?.[firstSizeName]
   return firstSize ? Object.keys(firstSize) : []
 })
 
